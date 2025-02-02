@@ -4,17 +4,28 @@ import com.heima.model.schedule.dtos.Task;
 
 public interface TaskService {
 
+
     /**
      * 添加延迟任务
      * @param task
-     * @return 返回当前任务的id
+     * @return
      */
     public long addTask(Task task);
 
     /**
-     * 删除任务/取消任务
-     * @param id
+     * 取消任务
+     * @param taskId
      * @return
      */
-    public boolean cancelTask(long id);
+    public boolean cancelTask(long taskId);
+
+    /**
+     * 按照类型和优先级拉取任务
+     * @param type
+     * @param priority
+     * @return
+     */
+    public Task poll(int type,int priority);
+
+
 }

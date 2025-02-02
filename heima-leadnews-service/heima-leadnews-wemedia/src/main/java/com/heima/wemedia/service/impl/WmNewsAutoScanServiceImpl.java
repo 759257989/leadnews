@@ -205,9 +205,9 @@ public class WmNewsAutoScanServiceImpl implements WmNewsAutoScanService {
         Map<String, String> map = new HashMap<>();
         double random = Math.random(); // random value between 0.0 and 1.0
 
-        if (random < 0.15) { // 15% chance for "block"
+        if (random < 0.015) { // 15% chance for "block"
             map.put("suggestion", "block");
-        } else if (random < 0.30) { // 15% chance for "review"
+        } else if (random < 0.030) { // 15% chance for "review"
             map.put("suggestion", "review");
         } else { // 70% chance for passing
             map.put("suggestion", "pass");
