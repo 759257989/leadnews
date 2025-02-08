@@ -23,8 +23,4 @@ This project follows a **microservices** approach, with services such as:
 3. **Admin Service** – Provides dashboard & moderation tools
 4. **API Gateway** – Routes requests to different services
 
-```bash
-git clone https://github.com/yourusername/news-app.git
-cd news-app
-mvn clean install
-mvn spring-boot:run
+
