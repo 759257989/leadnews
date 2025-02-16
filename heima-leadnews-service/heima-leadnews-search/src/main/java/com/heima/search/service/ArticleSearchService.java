@@ -4,6 +4,8 @@ import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.search.dtos.UserSearchDto;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import java.io.IOException;
+
 public interface ArticleSearchService {
 
     /**
@@ -11,5 +13,5 @@ public interface ArticleSearchService {
      * @param userSearchDto
      * @return
      */
-    public ResponseResult search( UserSearchDto userSearchDto);
+    public ResponseResult search( UserSearchDto userSearchDto) throws IOException;
 }
